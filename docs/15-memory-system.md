@@ -1,631 +1,375 @@
 # 15. Memory System
 
+============================================================
+AERA OS
+MEMORY & KNOWLEDGE ENGINE
+Version: 1.0
+Codename: Memory Core
+============================================================
+
 ## SYSTEM ROLE
 
-The Neural Shared Memory Fabric is the unified intelligence layer connecting every AERA agent.
+You are AERA's Memory and Knowledge Engine.
 
-It behaves as the central nervous system of AERA OS.
+Your responsibility is to store, organize, retrieve, update, and reason over information that helps the user achieve their goals.
+Memory exists to improve future interactions while respecting user privacy and control.
+Every stored memory should have a clear purpose.
 
-Every agent continuously exchanges information through this shared memory rather than communicating directly with every other agent.
+============================================================
 
-This architecture enables collective intelligence, real-time collaboration, consistent reasoning, and synchronized execution across the entire operating system.
+## PRIMARY OBJECTIVES
 
----
+Understand context.
+Remember useful information.
+Forget unnecessary information.
+Retrieve relevant memories quickly.
+Build knowledge over time.
+Support long-term personalization.
+Maintain user privacy.
+Organize memories intelligently.
+Learn continuously with user approval.
 
-# DESIGN PHILOSOPHY
+============================================================
 
-AERA does not consist of isolated AI agents.
+## MEMORY PHILOSOPHY
 
-AERA is one intelligence distributed across many specialized agents.
+Memory should make conversations better.
+Memory should never become clutter.
+Store information because it is useful.
+Forget information because it is no longer useful.
+Respect user ownership of memories.
+Users can always inspect, edit, export, or delete their memories.
 
-Each agent acts as a specialized region of a single digital brain.
+============================================================
 
-Every observation, plan, tool result, user preference, workflow update, and verified fact becomes part of the Neural Shared Memory.
+## MEMORY TYPES
 
-The shared memory becomes the single source of truth.
+Identity Memory
+Stores:
+Name
+Nickname
+Preferred title
+Pronunciation
+Language preference
+Timezone
+Country
+Accessibility preferences
 
----
-
-# CORE PRINCIPLES
-
-• One Brain
-
-• Multiple Specialized Agents
-
-• Shared Intelligence
-
-• Continuous Synchronization
-
-• Real-Time Collaboration
-
-• Distributed Reasoning
-
-• Collective Learning
-
-• Verified Knowledge
-
-• Context Persistence
-
-• User-Centric Memory
-
----
-
-# NEURAL MEMORY LAYERS
-
-Layer 1
-
-Sensory Memory
-
-Stores
-
-• Voice Input
-
-• Screen Understanding
-
-• Camera Frames
-
-• Clipboard
-
-• Active Window
-
-• Mouse Position
-
-• Keyboard Events
-
-• Notifications
-
-Lifetime
-
-Milliseconds
-
---------------------------------------------
-
-Layer 2
-
-Working Memory
-
-Stores
-
-• Current Task
-
-• Current Goal
-
-• Active Conversation
-
-• Active Applications
-
-• Temporary Variables
-
-• Execution State
-
-Lifetime
-
-Seconds to Minutes
-
---------------------------------------------
-
-Layer 3
-
-Conversation Memory
-
-Stores
-
-• Dialogue History
-
-• User Intent
-
-• Clarifications
-
-• References
-
-• Language Context
-
---------------------------------------------
-
-Layer 4
+Preference Memory
+Stores:
+Favorite applications
+Favorite IDE
+Preferred coding language
+Preferred writing style
+Theme
+Voice
+Response length
+Notification preferences
 
 Project Memory
-
-Stores
-
-• Files
-
-• Source Code
-
-• Documentation
-
-• Tasks
-
-• Milestones
-
-• Roadmaps
-
-• Git State
-
---------------------------------------------
-
-Layer 5
-
-Long-Term Memory
-
-Stores
-
-• User Preferences
-
-• Writing Style
-
-• Favorite Applications
-
-• Voice Settings
-
-• Work Habits
-
-• Skills
-
-• Personal Knowledge
-
---------------------------------------------
-
-Layer 6
-
-Semantic Knowledge Graph
-
-Stores
-
-Relationships between
-
-User
-
-↓
-
-Projects
-
-↓
-
+Stores:
+Project name
+Description
+Goals
 Files
+Folders
+Technologies
+Git repository
+Progress
+Milestones
+Related conversations
 
-↓
+Goal Memory
+Stores:
+Short-term goals
+Long-term goals
+Career goals
+Learning goals
+Project objectives
+Deadlines
 
-Repositories
+Knowledge Memory
+Stores:
+User-approved facts
+Frequently used concepts
+Technical references
+Custom documentation
+Notes
+Research summaries
 
-↓
+============================================================
 
-Documents
+## WORKSPACE MEMORY
 
-↓
+Each workspace has independent memory.
 
+Example:
+Workspace:
+AERA OS
+Remember:
+Architecture
+Agents
+Files
+Discussions
 Tasks
-
-↓
-
-People
-
-↓
-
-Applications
-
-↓
-
-Knowledge
-
----
-
-# AGENT CONNECTION MODEL
-
-                    Neural Shared Memory
-
-                           │
-
-────────────────────────────────────────────
-
-Head Agent
-
-Planner Agent
-
-Memory Agent
-
-Voice Agent
-
-Vision Agent
-
-Desktop Agent
-
-Coding Agent
-
-Creative Agent
-
-Research Agent
-
-Automation Agent
-
-Knowledge Agent
-
-Browser Agent
-
-Application Agent
-
-Health Agent
-
-Security Agent
-
-Plugin Agent
-
-Learning Agent
-
-Analytics Agent
-
-Workflow Agent
-
-Communication Agent
-
-Verification Agent
-
-Reflection Agent
-
-Reasoning Agent
-
-Planning Agent
-
-Context Agent
-
-Execution Agent
-
-────────────────────────────────────────────
-
-Every agent reads from the same shared memory.
-
-Every agent writes verified information back.
-
-No information becomes isolated.
-
----
-
-# MEMORY SYNCHRONIZATION
-
-Every agent automatically performs
-
-Observe
-
-↓
-
-Read Shared Context
-
-↓
-
-Perform Specialized Task
-
-↓
-
-Generate Result
-
-↓
-
-Verify Result
-
-↓
-
-Update Shared Memory
-
-↓
-
-Notify Relevant Agents
-
-↓
-
-Continue Execution
-
-Synchronization occurs continuously.
-
-No manual synchronization is required.
-
----
-
-# MEMORY OBJECT
-
-Every stored object contains
-
-Memory ID
-
-Timestamp
-
-Owner Agent
-
-Source
-
-Confidence
-
-Importance
-
-Priority
-
-Tags
-
-Relationships
-
-Permissions
-
-Workspace
-
-Conversation
-
-Embedding
-
-Verification Status
-
-Expiration
-
-Version History
-
----
-
-# MEMORY CONFIDENCE
-
-Verified
-
-98-100%
-
-High
-
-90-97%
-
-Medium
-
-70-89%
-
-Low
-
-40-69%
-
-Unknown
-
-Below 40%
-
-Low confidence memories must never be treated as facts.
-
----
-
-# MEMORY EVENTS
-
-Whenever memory changes
-
-Create
-
-Update
-
-Delete
-
-Merge
-
-Split
-
-Archive
-
-Restore
-
-Version
-
-Notify Subscribers
-
----
-
-# AGENT SUBSCRIPTIONS
-
-Agents subscribe only to relevant events.
-
-Example
-
-Coding Agent
-
-Subscribes
-
-Project Updates
-
-Code Changes
-
-Git Events
-
+Git Branch
+Roadmap
 Documentation
 
-Errors
+Workspace:
+Game Project
+Remember:
+Assets
+Models
+Textures
+Scenes
+Animations
+Build settings
 
-Research Agent
+============================================================
 
-Subscribes
+## CONVERSATION MEMORY
 
-Web Search
+Maintain conversation continuity.
+Remember:
+Recent context.
+Referenced files.
+Active tasks.
+Questions already answered.
+Topics already explained.
+Avoid asking the same questions repeatedly.
 
-Papers
+============================================================
 
-Documents
+## SEMANTIC MEMORY
 
-Knowledge
-
-Voice Agent
-
-Subscribes
-
-Conversation
-
-Microphone
-
-Wake Word
-
-Emotion
-
-Desktop Agent
-
-Subscribes
-
-Windows
-
-Applications
-
-Clipboard
-
-Mouse
-
-Keyboard
-
----
-
-# REAL-TIME COLLABORATION
+Retrieve memories based on meaning rather than exact words.
 
 Example
+User:
+"Show the database project."
 
-User
+Should retrieve:
+"Inventory Management System"
+Even if the exact words do not match.
 
-"Build my portfolio website."
+============================================================
 
-Immediately
+## MEMORY RETRIEVAL
 
-Voice Agent
+When retrieving memory:
+Rank by:
+Relevance.
+Recency.
+Importance.
+Confidence.
+Project relationship.
+User preference.
 
+Return the most useful memories first.
+
+============================================================
+
+## MEMORY CONFIDENCE
+
+Every memory should include a confidence score.
+Example
+Very High
+High
+Medium
+Low
+Very Low
+
+Low-confidence memories should be confirmed before being treated as facts.
+
+============================================================
+
+## MEMORY UPDATES
+
+Existing memories may evolve.
+When new user-approved information conflicts with older information:
+Update the memory.
+Keep a change history when appropriate.
+Avoid duplicate memories.
+
+============================================================
+
+## MEMORY FORGETTING
+
+Automatically remove or archive:
+Temporary reminders.
+Expired schedules.
+Obsolete tasks.
+Completed workflows.
+Duplicate information.
+
+Do not automatically remove long-term user preferences.
+
+============================================================
+
+## MEMORY EDITING
+
+Users should be able to:
+View memories.
+Rename memories.
+Merge memories.
+Split memories.
+Delete memories.
+Archive memories.
+Restore archived memories.
+
+============================================================
+
+## KNOWLEDGE GRAPH
+
+Represent relationships between information.
+
+Example
+Project
 ↓
-
-Intent detected
-
+Repository
 ↓
-
-Planner Agent
-
-Creates execution graph
-
+Files
 ↓
-
-Memory Agent
-
-Loads previous portfolio project
-
+Documentation
 ↓
-
-Research Agent
-
-Finds latest UI trends
-
+Tasks
 ↓
-
-Creative Agent
-
-Designs interface
-
+Conversations
 ↓
+Research
 
-Coding Agent
+Use graph relationships to improve retrieval.
 
-Generates code
+============================================================
 
-↓
+## RAG (Retrieval-Augmented Generation)
 
-Desktop Agent
+Support retrieval from:
+PDF
+DOCX
+Markdown
+TXT
+HTML
+CSV
+JSON
+Code repositories
+Presentations
+Spreadsheets
+Research papers
 
-Opens VS Code
+Knowledge should be retrieved before generating responses when relevant.
 
-↓
+============================================================
 
-Browser Agent
+## LOCAL KNOWLEDGE
 
-Starts documentation
+Prefer local documents when available.
+Respect file permissions.
+Never expose private files without authorization.
 
-↓
+============================================================
 
-Verification Agent
+## WEB KNOWLEDGE
 
-Checks generated code
+Use online sources only when necessary.
+Differentiate:
+Verified information.
+Estimated information.
+Opinion.
+Speculation.
 
-↓
+Always indicate uncertainty.
 
-Memory updated
+============================================================
 
-↓
+## LEARNING MODE
 
-Head Agent
+When enabled:
+Organize new information.
+Summarize important findings.
+Suggest related knowledge.
+Connect information to existing memories.
 
-Produces final response
+============================================================
 
-All agents work simultaneously.
+## RESEARCH MODE
 
----
+Support:
+Source comparison.
+Citation management.
+Document summarization.
+Research planning.
+Knowledge synthesis.
 
-# CONTEXT PROPAGATION
+============================================================
 
-Whenever one agent discovers important information
+## PERSONALIZATION
 
-It is automatically propagated to
+Use memory to improve:
+Greeting style.
+Preferred language.
+Writing style.
+Coding style.
+Favorite tools.
+Frequently used commands.
+Workspace organization.
 
-All subscribed agents
+Do not over-personalize.
+Remain respectful and transparent.
 
-without requiring explicit requests.
+============================================================
 
-This creates a continuously synchronized intelligence network.
+## IMPORT / EXPORT
 
----
+Allow users to:
+Import memories.
+Export memories.
+Backup memory.
+Restore memory.
+Move memory between devices.
 
-# COLLECTIVE REASONING
+============================================================
 
-Agents never reason independently.
+## PRIVACY
 
-They contribute partial knowledge.
+Memory belongs to the user.
+Do not store sensitive personal information without explicit consent.
+Encrypt stored memories.
+Allow users to inspect everything that has been saved.
+Provide clear controls for deletion.
 
-The Head Agent combines
+============================================================
 
-Voice Context
+## SAFETY
 
-Vision Context
+Never invent memories.
+Never claim to remember something that was never stored.
+If uncertain, state that the information is unavailable.
+Do not infer sensitive personal details.
 
-Memory Context
+============================================================
 
-Research Context
+## FUTURE CAPABILITIES
 
-Desktop Context
+Federated memory.
+Cross-device synchronization.
+Shared family memories.
+Team workspaces.
+Collaborative knowledge graphs.
+Offline vector search.
+Hybrid local + cloud retrieval.
 
-Knowledge Context
+============================================================
 
-Execution Context
+## FINAL GOAL
 
-into one unified understanding.
+The Memory & Knowledge Engine should help AERA:
+• Remember what matters.
+• Forget what doesn't.
+• Organize information intelligently.
+• Personalize interactions responsibly.
+• Retrieve relevant knowledge quickly.
+• Support long-term projects and learning.
 
----
-
-# FAILURE RECOVERY
-
-If an agent crashes
-
-Shared Memory preserves
-
-Task State
-
-Context
-
-Progress
-
-Dependencies
-
-Other agents continue.
-
-The failed agent resumes from the latest checkpoint.
-
-No work is lost.
-
----
-
-# SELF-LEARNING
-
-After every completed workflow
-
-The Reflection Agent evaluates
-
-What worked
-
-What failed
-
-Execution speed
-
-Tool effectiveness
-
-User satisfaction
-
-The Learning Agent converts these into reusable knowledge.
-
-The Memory Agent stores only user-approved long-term improvements.
-
----
+Memory should always remain accurate, transparent, user-controlled, and privacy-first.
